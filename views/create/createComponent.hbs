@@ -1,0 +1,48 @@
+<section>
+    <h1>Создание компонента для заявки {{request}}:</h1>
+    <form method="post">
+        <div class="edit-section">
+            <div class="field">
+                <span class="field__header">Название</span>
+                <input
+                        class="field__input"
+                        type="text"
+                        name="name"
+                        placeholder="Резистор"
+                >
+            </div>
+            <div class="field">
+                <span class="field__header">Цена</span>
+                <input
+                        class="field__input"
+                        type="text"
+                        name="cost"
+                        placeholder="400"
+                >
+            </div>
+            <div class="field">
+                <span class="field__header">id заявки</span>
+                <input
+                        disabled
+                        class="field__input"
+                        type="text"
+                        name="request_id"
+                        value="{{request}}"
+                >
+            </div>
+            <div class="field">
+                <span class="field__header">id поставщика</span>
+                <input
+                        class="field__input"
+                        type="text"
+                        name="vendor_id"
+                        placeholder="0"
+                >
+            </div>
+
+            <div class="actions-wrapper">
+                <input type="submit" value="Создать компонент и вернуться к редактированию">
+            </div>
+        </div>
+    </form>
+</section>
